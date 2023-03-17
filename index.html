@@ -3,19 +3,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Super Power Evolution Simulator</title>
-    <link rel=“stylesheet” type=“text/css” href=“styles.css”>
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/main.js"></script>
   </head>
 
   <body>
-    <center>
-      <img src="Logo.png" alt="Super Power Evolution Simulator" />
-    </center>
+    <img class="logo" src="Logo.png" alt="Super Power Evolution Simulator" />
     <h2>Time Calculator</h2>
-    <table border="1">
+    <table>
       <tr>
         <td>Desired Power:</td>
-        <td><input type="number" id="desiredPower" /></td>
+        <td>
+          <input type="number" id="desiredPower" />
+        </td>
         <td>Unit:</td>
         <td>
           <select id="desiredPowerUnit" class="unitSelecter">
@@ -140,8 +140,16 @@
         </td>
       </tr>
       <tr>
-        <td><button onclick="calculateTime()">Calculate Time</button></td>
-        <td colspan="4" id="result">Result</td>
+        <td>
+          <input
+            type="submit"
+            id="calculate"
+            value="Calculate"
+            onclick="calculateTime()"
+            disabled
+          />
+        </td>
+        <td colspan="4" id="result"></td>
       </tr>
     </table>
   </body>

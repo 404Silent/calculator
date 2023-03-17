@@ -4,6 +4,11 @@ body {
     font-family: Arial, sans-serif
 }
 
+.logo{
+    display: block;
+    margin: 0 auto;
+}
+
 h2 {
     text-align: center;
 }
@@ -25,7 +30,6 @@ input[type="text"], input[type="number"] {
     background-color: #070E3F;
     color: white;
     border: none;
-    border-bottom: 0px solid lightblue;
     text-align: center;
     width: 100%;
 }
